@@ -7,7 +7,7 @@ jobs:
           - uses: actions/checkout@v7
           - uses: actions/upload-artifact
             with: 
-              path:notes.pdf
+              path: notes.pdf
           - run: sudo apt-get update
           - run: sudo apt install texlive-latex-base
           - run: pdflatex notes.tex  
